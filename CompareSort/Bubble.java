@@ -1,9 +1,10 @@
+//BubbleSort
 package CompareSort;
 public class Bubble
 {
     static long sort(int arr[])
     {  
-        long start=Timer.start();;
+        long start=Timer.start();//Time measure at the start of method
         int n = arr.length;
         for (int i = 0; i < n-1; i++)
         {   for (int j = 0; j < n-i-1; j++)
@@ -16,7 +17,7 @@ public class Bubble
                 }
             }
         }
-        long end= Timer.end();
+        long end= Timer.end();//Time measure at the end of method
         return (end-start);
     }
 }
