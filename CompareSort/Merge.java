@@ -35,6 +35,7 @@ public class Merge
         int l=0;
         long start=Timer.start();
         MergeSort(arr,l,h);
+        long end=Timer.end();
         return (end-start);
     }
 }
