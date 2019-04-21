@@ -1,6 +1,6 @@
 package CompareSort;
 public class Radix
-{   int getMax(int a[];int n)
+{   int getMax(int a[],int n)
     {
         int max=a[0];
         for(int i=1;i<n;i++)
