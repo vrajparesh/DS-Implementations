@@ -33,8 +33,8 @@ public class Activity
         { 
       	    if (arr[j].start>= arr[i].finish) 
       	    {	 
-			    System.out.println((j)+") ("+arr[j].start+","+arr[j].finish+")"); 
-			    i = j; 
+		System.out.println((j)+") ("+arr[j].start+","+arr[j].finish+")"); 
+		i = j; 
       	    } 
         } 
     }
