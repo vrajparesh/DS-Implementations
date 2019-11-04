@@ -1,10 +1,10 @@
-import java.util.ArrayList;
 import java.util.Scanner;
 import java.io.IOException;
-import java.lang.*;
 
-public class Activity
-{   int start,finish;
+class Activity
+{   
+    int start
+    int finish;
     Activity()
     {
         this.start=0;
