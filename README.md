@@ -8,7 +8,7 @@ My open source collection that's focussed on understanding the concepts of Data 
 
 ## Wanna Contribute?
  * Contributions are always welcome. Just make sure you're implementing an algorithm.
- * Language should be Java 
+ * Language should be *Java* 
  * To add, follow the structure:
 
    > algorithm_type/algorithm_name/file_name.extension
