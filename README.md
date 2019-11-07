@@ -7,10 +7,11 @@ My open source collection that's focussed on understanding the concepts of Data 
 
 
 ## Wanna Contribute?
- * Contributions are always welcome. Language doesn't matter. Just make sure you're implementing an algorithm.
+ * Contributions are always welcome. Just make sure you're implementing an algorithm.
+ * Language should be Java 
  * To add, follow the structure:
 
-   > algorithm_type/algorithm_name/language_name/file_name.extension
+   > algorithm_type/algorithm_name/file_name.extension
 
  * If an implementation exists already in the language you chose, please don't make uneccesary PRs.
  * Do not remove previous implementations of algorithms. Just add a new file with your own implementation.
