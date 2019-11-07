@@ -3,7 +3,7 @@ import java.util.Scanner;
  * @author vrajparesh
  *
  */
-public class Fractional_Knapsack 
+public class fractionalknapsack 
 {
     private static double getAns(int maxcap, int[] values, int[] weights) 
     {
