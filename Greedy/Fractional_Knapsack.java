@@ -7,8 +7,8 @@ public class Fractional_Knapsack
 {
     private static double getAns(int maxcap, int[] values, int[] weights) 
     {
-        double tValue = 0;
-        double tWeight = 0;
+        double tValue = 0;                    // Initialize value
+        double tWeight = 0;                   // Initialize weight
         while (tWeight <= maxcap) 
         {
             int iofMax = HighestVbyW(values, weights);
@@ -18,7 +18,7 @@ public class Fractional_Knapsack
                 tValue += values[iofMax];
             } else 
             {
-                double diff = maxcap - tWeight;
+                double diff = maxcap - tWeight;  // Defining a variable that will be fractioned weight, to be added later.
 
                 tWeight += diff;
                 tValue += diff * (values[iofMax] / (double) weights[iofMax]);
@@ -33,7 +33,7 @@ public class Fractional_Knapsack
     {
         double currVal = 0;
         double maxVal = 0;
-        int iofMax = 0;
+        int iofMax = 0; 
         for (int i = 0; i < values.length; ++i) 
         {
             currVal = values[i] / (double) weights[i];
@@ -48,14 +48,14 @@ public class Fractional_Knapsack
     public static void main(String args[]) 
     {
         Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
-        int maxcap = sc.nextInt();
-        int[] values = new int[n];
+        int n = sc.nextInt();           // Gets number of objects from User
+        int maxcap = sc.nextInt();      // Gets the Knapsack capacity allowed from user
+        int[] values = new int[n]; 
         int[] weights = new int[n];
         for (int i = 0; i < n; i++) 
         {
-            values[i] = sc.nextInt();
-            weights[i] = sc.nextInt();
+            values[i] = sc.nextInt();   // Gets the value for the ith object
+            weights[i] = sc.nextInt();  // Gets the weight for the ith object
         }
         System.out.println(getAns(maxcap, values, weights));
         sc.close();
